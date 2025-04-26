@@ -1,0 +1,10 @@
+/* src/styles/ThemeSwitcher.css */
+.theme-switcher-button {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+  /* Positioned with some right margin to avoid overlapping profile area */
+  margin-right: 20px;
+}

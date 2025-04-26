@@ -1,0 +1,40 @@
+# Node.js
+/frontend/node_modules/
+/backend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+face_recognition/__pycache__/
+face_recognition/models/face_model.yml
+
+# Environments
+.env
+/backend/.env
+/frontend/.env
+
+# Logs
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Build
+/frontend/build/
+
+# PowerBI tokens or secrets
+*.pbix
+*.pbit
+
+# Virtual Environment
+face_recognition/venv/
+.venv/
+
+# VSCode
+.vscode/
+
+# Other
+*.zip

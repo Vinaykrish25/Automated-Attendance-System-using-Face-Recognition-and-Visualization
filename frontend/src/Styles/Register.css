@@ -1,0 +1,48 @@
+/* src/styles/Register.css */
+.register-container {
+  width: 350px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: var(--body-bg);
+  color: var(--text-color); /* Ensure text color follows theme */
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: var(--text-color); /* Input text color */
+  background-color: var(--body-bg);
+}
+
+.register-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff; /* Button text color is fixed (or you can use var(--text-color) if desired) */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-container .message {
+  margin-top: 15px;
+  text-align: center;
+  color: red;
+}
+
+.user-type label {
+  cursor: pointer;
+}
