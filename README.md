@@ -1,7 +1,8 @@
 
+````markdown
 # 🎓 Smart Attendance System with Face Recognition
 
-An AI-based automated attendance system using Python for face detection and recognition, React.js for the frontend, Express.js and MongoDB for the backend, and Power BI for visual reporting.
+An AI-based automated attendance system using Python for face detection and recognition, React.js for the frontend, Express.js and MongoDB for the backend.
 
 ---
 
@@ -19,14 +20,17 @@ Download and install Python 3.10.0 from the [official site](https://www.python.o
 
 ```bash
 python -m venv venv
-```
+````
 
 Activate it:
-- Windows:
+
+* Windows:
+
   ```bash
   venv\Scripts\activate
   ```
-- macOS/Linux:
+* macOS/Linux:
+
   ```bash
   source venv/bin/activate
   ```
@@ -55,13 +59,14 @@ requests
 
 ### 🧠 Algorithms Used:
 
-- **Face Detection:** `Haar Cascade Classifier` (OpenCV's pretrained XML file)
-- **Face Recognition:** `Local Binary Patterns Histogram (LBPH)` using OpenCV's `cv2.face.LBPHFaceRecognizer_create()`.
+* **Face Detection:** `Haar Cascade Classifier` (OpenCV's pretrained XML file)
+* **Face Recognition:** `Local Binary Patterns Histogram (LBPH)` using OpenCV's `cv2.face.LBPHFaceRecognizer_create()`.
 
 ### 🧾 Core Scripts:
-- `face_detection.py` – Captures and saves face images.
-- `train_model.py` – Trains the model on dataset images and saves `face_model.yml`.
-- `recognize_face.py` – Recognizes faces via webcam and marks attendance.
+
+* `face_detection.py` – Captures and saves face images.
+* `train_model.py` – Trains the model on dataset images and saves `face_model.yml`.
+* `recognize_face.py` – Recognizes faces via webcam and marks attendance.
 
 ---
 
@@ -144,27 +149,65 @@ npm start
 
 ---
 
-## 📊 Power BI Integration
+## 📸 Screenshots
 
-1. Publish report to Power BI Workspace
-2. Setup Azure App → Get Client ID, Secret, Tenant ID
-3. Add `.env` variables:
+### 🏠 Home Page
 
-```env
-POWERBI_CLIENT_ID=xxx
-POWERBI_CLIENT_SECRET=xxx
-POWERBI_TENANT_ID=xxx
-POWERBI_WORKSPACE_ID=xxx
-POWERBI_REPORT_ID=xxx
-PORT1=5005
-```
+![Home Page](./HomePage.png)
 
-4. Access Token & Embed URL served via:  
-```bash
-GET http://localhost:5005/api/powerbi/token
-```
+---
 
-5. On frontend (React), load the report using `powerbi-client`.
+### 🧠 Image Detection (Face Dataset Collection)
+
+![Image Detection](./Image_Detection.png)
+
+---
+
+### 🎓 Student Dashboard
+
+![Student Dashboard](./Student_Dashboard.png)
+
+---
+
+### 🔐 Admin Login Page
+
+![Admin Login](./Admin_Login.png)
+
+---
+
+### 📅 Attendance Records Table
+
+![Attendance Records](./Attendance_Records.png)
+
+---
+
+### 📊 Absences by Period (Bar Chart)
+
+![Chart 1](./Chart_1.png)
+
+---
+
+### 🧍 Single Student Attendance Proportions (Pie Chart)
+
+![Chart 2](./Chart_2.png)
+
+---
+
+### 👥 Absent Periods by Student (Bar Chart)
+
+![Chart 3](./Chart_3.png)
+
+---
+
+### 🧾 Attendance Composition per Student (Stacked Chart)
+
+![Chart 4](./Chart_4.png)
+
+---
+
+### 📈 Overall Attendance Trend (Line Chart)
+
+![Chart 5](./Chart_5.png)
 
 ---
 
@@ -195,4 +238,4 @@ GET http://localhost:5005/api/powerbi/token
 
 All core logic including attendance automation, face recognition, and data visualization was developed from scratch using modern full stack tools.
 
----
+```
