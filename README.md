@@ -155,61 +155,61 @@ npm start
 
 ### 🏠 Home Page
 
-![Home Page](./HomePage.png)
+![Home Page](./screenshots//HomePage.png)
 
 ---
 
 ### 🧠 Image Detection (Face Dataset Collection)
 
-![Image Detection](./Image_Detection.png)
+![Image Detection](./screenshots/Image_Detection.png)
 
 ---
 
 ### 🎓 Student Dashboard
 
-![Student Dashboard](./Student_Dashboard.png)
+![Student Dashboard](./screenshots/Student_Dashboard.png)
 
 ---
 
 ### 🔐 Admin Login Page
 
-![Admin Login](./Admin_Login.png)
+![Admin Login](./screenshots/Admin_Login.png)
 
 ---
 
 ### 📅 Attendance Records Table
 
-![Attendance Records](./Attendance_Records.png)
+![Attendance Records](./screenshots/Attendance_Records.png)
 
 ---
 
 ### 📊 Absences by Period (Bar Chart)
 
-![Chart 1](./Chart_1.png)
+![Chart 1](./screenshots/Chart_1.png)
 
 ---
 
 ### 🧍 Single Student Attendance Proportions (Pie Chart)
 
-![Chart 2](./Chart_2.png)
+![Chart 2](./screenshots/Chart_2.png)
 
 ---
 
 ### 👥 Absent Periods by Student (Bar Chart)
 
-![Chart 3](./Chart_3.png)
+![Chart 3](./screenshots/Chart_3.png)
 
 ---
 
 ### 🧾 Attendance Composition per Student (Stacked Chart)
 
-![Chart 4](./Chart_4.png)
+![Chart 4](./screenshots/Chart_4.png)
 
 ---
 
 ### 📈 Overall Attendance Trend (Line Chart)
 
-![Chart 5](./Chart_5.png)
+![Chart 5](./screenshots/Chart_5.png)
 
 ---
 
