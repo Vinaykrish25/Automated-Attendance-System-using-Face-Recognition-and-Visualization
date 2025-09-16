@@ -1,0 +1,48 @@
+/* src/styles/global.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme variables */
+.light-theme {
+  --body-bg: #ffffff;
+  --text-color: #000000;
+  --nav-bg: #eeeeee;
+}
+
+/* Dark theme variables */
+.dark-theme {
+  --body-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --nav-bg: #333333;
+}
+
+/* Apply theme colors */
+body {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+/* Light Theme */
+.light-theme {
+  --sidebar-bg: #f1f1f1;
+  --text-color: #222;
+  --hover-bg: #ddd;
+  --logout-btn-bg: #ffffff;
+  --logout-btn-color: #333;
+  --logout-btn-hover: #cccccc;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --sidebar-bg: #1f1f1f;
+  --text-color: #f1f1f1;
+  --hover-bg: #333;
+  --logout-btn-bg: #333;
+  --logout-btn-color: #f1f1f1;
+  --logout-btn-hover: #555;
+}
+

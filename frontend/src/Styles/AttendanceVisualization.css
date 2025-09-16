@@ -1,0 +1,75 @@
+/* src/styles/AttendanceVisualization.css */
+.attendance-visualization {
+  width: 95%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.attendance-visualization h2 {
+  margin-bottom: 20px;
+}
+
+/* Filter Section Styling */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.filter-section input,
+.filter-section select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Chart container styling */
+.chart-section {
+  width: 100%;
+  height: 300px; /* Medium chart size */
+  margin-bottom: 140px;
+  position: relative;
+}
+
+/* Ensure the chart canvas fills the container */
+.chart-section canvas {
+  height: 100% !important;
+}
+
+/* Student selector styling for pie chart */
+.student-selector {
+  margin-bottom: 10px;
+}
+
+.student-selector label {
+  margin-right: 10px;
+}
+
+/* Add to your existing AttendanceVisualization.css */
+.clear-filter-btn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.clear-filter-btn:hover {
+  background-color: #c82333;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .attendance-visualization {
+    font-size: 14px;
+  }
+}

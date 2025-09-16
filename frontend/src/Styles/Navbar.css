@@ -1,0 +1,93 @@
+/* src/styles/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* User Profile Section */
+.user-profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-icon {
+  margin-right: 8px;
+}
+
+.user-name {
+  font-size: 16px;
+}
+
+/* Dropdown styling */
+.dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.dropdown button {
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.dropdown button:hover {
+  background-color: #c4c2c2;
+  transition: 0.6s;
+  border-radius: 5px;
+}
+
+/* Dark Theme Styling for Dropdown Button */
+body.dark-theme .dropdown {
+  background: #2a2a2a;
+  border: 1px solid #555;
+}
+
+body.dark-theme .dropdown button {
+  color: #fff;
+}
+
+body.dark-theme .dropdown button:hover {
+  background-color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-right {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
