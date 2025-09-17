@@ -4,6 +4,9 @@
 
 An AI-based automated attendance system using Python for face detection and recognition, React.js for the frontend, Express.js and MongoDB for the backend.
 
+**🔗 Frontend Repository :** [Visit](https://github.com/Vinaykrish25/Automated-Attendance-System-Frontend.git)
+**🔗 Backend Repository :** [Visit](https://github.com/Vinaykrish25/Automated-Attendance-System-Backend.git)
+
 ---
 
 ## 📦 Python Backend Setup
