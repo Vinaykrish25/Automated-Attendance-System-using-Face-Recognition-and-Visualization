@@ -40,7 +40,7 @@ const AttendanceTable = () => {
     }
 
     fetchAttendance();
-  }, []);
+  }, [initialFilter]);
 
   const fetchAttendance = async () => {
     try {

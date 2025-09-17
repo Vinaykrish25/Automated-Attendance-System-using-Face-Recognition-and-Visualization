@@ -1,24 +1,25 @@
 // src/pages/auth/Register.js
-import React, { useState } from 'react';
-import api from '../../api';
-import '../../Styles/Register.css';
+import React, { useState } from "react";
+import api from "../../api";
+import "../../Styles/Register.css";
 
 const Register = () => {
-  const [userType, setUserType] = useState('student'); // Default: student registration
+  const [userType, setUserType] = useState("student"); // Default: student registration
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    rollNumber: '',
-    password: '',
-    confirmPassword: ''
+    name: "",
+    email: "",
+    rollNumber: "",
+    password: "",
+    confirmPassword: "",
   });
-  const [message, setMessage] = useState('');
-  const [messageType, setMessageType] = useState(''); // "success" or "error"
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState(""); // "success" or "error"
   const [showPassword, setShowPassword] = useState(false);
 
   // Regex patterns for validation
   const userVal = /^[0-9A-Za-z]{5,20}$/;
-  const emailVal = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const emailVal = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   const passwordVal = /^[a-zA-Z0-9!@#$%^&*]{8,}$/;
 
   const handleChange = (e) => {
@@ -44,7 +45,9 @@ const Register = () => {
       return;
     }
     if (!passwordVal.test(formData.password)) {
-      setMessage("Password must be at least 8 characters and can include letters, numbers and !@#$%^&*.");
+      setMessage(
+        "Password must be at least 8 characters and can include letters, numbers and !@#$%^&*."
+      );
       setMessageType("error");
       return;
     }
@@ -54,25 +57,25 @@ const Register = () => {
       return;
     }
 
-    let endpoint = '';
+    let endpoint = "";
     let data = {};
 
-    if (userType === 'admin') {
-      endpoint = '/users/register/admin';
+    if (userType === "admin") {
+      endpoint = "/users/register/admin";
       data = {
         name: formData.name,
         email: formData.email,
         password: formData.password,
-        confirmPassword: formData.confirmPassword
+        confirmPassword: formData.confirmPassword,
       };
     } else {
-      endpoint = '/users/register/student';
+      endpoint = "/users/register/student";
       data = {
         name: formData.name,
         email: formData.email,
         rollNumber: formData.rollNumber,
         password: formData.password,
-        confirmPassword: formData.confirmPassword
+        confirmPassword: formData.confirmPassword,
       };
     }
 
@@ -81,11 +84,11 @@ const Register = () => {
       setMessage(res.data.message);
       setMessageType("success");
       setFormData({
-        name: '',
-        email: '',
-        rollNumber: '',
-        password: '',
-        confirmPassword: ''
+        name: "",
+        email: "",
+        rollNumber: "",
+        password: "",
+        confirmPassword: "",
       });
     } catch (err) {
       const errorMessage =
@@ -105,7 +108,7 @@ const Register = () => {
           <input
             type="radio"
             value="student"
-            checked={userType === 'student'}
+            checked={userType === "student"}
             onChange={handleUserTypeChange}
           />
           Student
@@ -114,7 +117,7 @@ const Register = () => {
           <input
             type="radio"
             value="admin"
-            checked={userType === 'admin'}
+            checked={userType === "admin"}
             onChange={handleUserTypeChange}
           />
           Admin
@@ -137,7 +140,7 @@ const Register = () => {
           onChange={handleChange}
           required
         />
-        {userType === 'student' && (
+        {userType === "student" && (
           <input
             type="number"
             name="rollNumber"
@@ -176,7 +179,10 @@ const Register = () => {
         <button type="submit">Register</button>
       </form>
       {message && (
-        <p className="message" style={{ color: messageType === "success" ? "green" : "red" }}>
+        <p
+          className="message"
+          style={{ color: messageType === "success" ? "green" : "red" }}
+        >
           {message}
         </p>
       )}

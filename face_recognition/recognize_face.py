@@ -14,8 +14,8 @@ dataset_path = "dataset"
 student_data = {int(folder.split("_")[0]): folder.split("_")[1] for folder in os.listdir(dataset_path)}
 
 # API URLs
-BACKEND_API_URL = "http://localhost:5001/api/attendance/mark"
-CHECK_ATTENDANCE_API_URL = "http://localhost:5001/api/attendance/"
+BACKEND_API_URL = "https://automated-attendance-system-backend.vercel.app/api/attendance/mark"
+CHECK_ATTENDANCE_API_URL = "https://automated-attendance-system-backend.vercel.app/api/attendance/"
 
 # Adjust brightness dynamically
 def adjust_brightness(image):

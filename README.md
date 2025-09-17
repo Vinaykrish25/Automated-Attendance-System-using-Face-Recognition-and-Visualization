@@ -1,6 +1,6 @@
 
 ````markdown
-# 🎓 Smart Attendance System with Face Recognition
+# 🎓 Automated Attendance System using Face Recognition and Visualization
 
 An AI-based automated attendance system using Python for face detection and recognition, React.js for the frontend, Express.js and MongoDB for the backend.
 

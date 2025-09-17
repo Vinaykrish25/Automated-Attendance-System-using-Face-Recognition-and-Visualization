@@ -51,6 +51,7 @@ const AdminLogin = () => {
           onChange={handleChange}
           required
         />
+        <p style={{color:"red", fontSize: "13px"}}>Enter demo email: <span style={{color: "green"}}>vinaykrish2002@gmail.com</span></p>
         <input
           type={showPassword ? "text" : "password"}
           name="password"
@@ -59,6 +60,7 @@ const AdminLogin = () => {
           onChange={handleChange}
           required
         />
+          <p style={{color:"red", fontSize: "13px"}}>Enter demo password: <span style={{color: "green"}}>Vinay@123</span></p>
         <div className="show-password">
           <label>
             <input

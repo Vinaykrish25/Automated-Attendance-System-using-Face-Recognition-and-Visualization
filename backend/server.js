@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 // Enable CORS, allowing requests from your frontend URLs and localhost during development
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:3001'],
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'https://automated-attendance-system-fronten.vercel.app'],
     credentials: true
 }));
 app.use(express.json());
