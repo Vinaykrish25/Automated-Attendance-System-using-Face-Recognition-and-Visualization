@@ -4,7 +4,7 @@ This is the **backend** of the Smart Attendance System project.
 It provides APIs for **authentication, attendance management, and user handling**.
 **Main Repository: (Full project here 👉):** [Automated Attendance System using Face Recognition and Visualization](https://github.com/Vinaykrish25/Automated-Attendance-System-using-Face-Recognition-and-Visualization.git)
 
-🔗 **Live Demo (Frontend):** ![Demo Link](https://automated-attendance-system-fronten.vercel.app/)
+🔗 **Live Demo (Frontend):** [See demo](https://automated-attendance-system-fronten.vercel.app/)
 
 ---
 
